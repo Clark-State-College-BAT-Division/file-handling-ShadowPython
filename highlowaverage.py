@@ -8,6 +8,9 @@
 #Lowest number
 #Correct answers for the included file:
 
+
+
+#in case the file is called somthing else
 file_path = input("Name of the file path:")
 
 with open(file_path, "r") as t:

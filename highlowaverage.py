@@ -7,3 +7,22 @@
 #Highest number
 #Lowest number
 #Correct answers for the included file:
+
+file_path = input("Name of the file path:")
+
+with open(file_path, "r") as t:
+    count = [int(x) for x in t.read().split()]
+
+total = sum(count)
+
+advrage = total / len(count)
+
+highest = max(count)
+lowest = min(count)
+
+print(f"There are {len(count)} numbers in the file")
+print(f"The total of all the numbers is {total}")
+print(f"the adverage is {advrage}")
+print(f"The highest number is {highest}")
+print(f"The lowest number is {lowest}")
+
